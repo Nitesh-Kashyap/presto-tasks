@@ -1,0 +1,35 @@
+Test cases -
+
+Program 1
+1. Input must be an array => arr.class.is_a?(Array)
+
+2. Every element of array must be of Integer class => arr.all? {|i| i.is_a?(Integer) }
+
+3. Result must be an array of integers
+
+4. Comparing input and result array, all values must be true => arr.zip(result).map { |x, y| y == x * x } 
+
+
+Program 2
+1. Input must be an Integer => num.class.is_a?(Integer)
+
+2. Result array any element should not be divisible by 3 , 5 =>
+result.any? { |num| num % 3 == 0 || num % 5 == 0}
+
+Program 3
+1. Input must be of string type
+
+2. array_data.split(',') must be of Array Class
+
+3. JSON.parse(hash_data) must be of Hash class
+
+Program 4
+1. Method must take 3 arguments
+
+2. start_date , end_date must parse to date class
+
+3. Result must be of array class
+
+4. For monthly result each element must include 01 
+
+5. For weekly difference b/w two consecutive dates must not increase 7 days
